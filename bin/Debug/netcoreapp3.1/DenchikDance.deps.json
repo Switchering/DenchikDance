@@ -24,6 +24,7 @@
     ".NETCoreApp,Version=v3.1": {
       "DenchikDance/1.0.0": {
         "dependencies": {
+          "Font.Awesome": "5.12.0",
           "Microsoft.EntityFrameworkCore.Design": "3.1.1",
           "Microsoft.EntityFrameworkCore.Sqlite": "3.1.1",
           "Microsoft.EntityFrameworkCore.SqlServer": "3.1.1",
@@ -308,6 +309,7 @@
           "DenchikDance.dll": {}
         }
       },
+      "Font.Awesome/5.12.0": {},
       "Microsoft.AspNetCore.Html.Abstractions/2.2.0": {
         "dependencies": {
           "System.Text.Encodings.Web": "4.5.0"
@@ -3934,6 +3936,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "Font.Awesome/5.12.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-bkykeiHEWnrPGJkOPTwU7XhU3EHdYdmhQqoxuucCqWdhuatQw+jvcRIIbD3onb23v4v4oe65hvMRLryrcL4LWg==",
+      "path": "font.awesome/5.12.0",
+      "hashPath": "font.awesome.5.12.0.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Html.Abstractions/2.2.0": {
       "type": "package",

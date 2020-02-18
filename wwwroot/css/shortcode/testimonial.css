@@ -1,0 +1,59 @@
+/*------------- 6. testimonial-area ---------------*/
+.testimonial-area .owl-theme .owl-controls .owl-nav div {
+  color: #383838;
+  font-size: 30px;
+  opacity: 1;
+  position: absolute;
+  right: 50%;
+  transform: translateX(-50%);
+  transition: all 0.3s ease 0s;
+}
+
+.testimonial-area .owl-theme .owl-controls .owl-nav div.owl-next {
+  left: 50%;
+  margin-left: 8px;
+}
+.testimonial-active .owl-nav {
+  margin-top: 48px;
+}
+
+
+.testimonial-area .owl-theme .owl-controls .owl-nav div:hover {
+  color: #888;
+}
+
+.single-testimonial i {
+  font-size: 80px;
+}
+.single-testimonial > h3 {
+  color: #666666;
+  font-size: 18px;
+  font-weight: normal;
+  margin: 8px 0 10px;
+}
+.test-icon i {
+  font-size: 18px;
+  margin-right: 5px;
+}
+
+.test-icon {
+  margin-top: 14px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,32 @@
+
+/*  footer css  */
+
+
+
+.footer-right li {
+  float: left;
+  margin-left: 40px;
+}
+.footer-right li:first-child {
+  margin-left: 0px;
+}
+.footer-right {
+  float: right;
+  margin-top: 3px;
+}
+
+.footer-right a {
+  font-weight: 600;
+}
+
+
+/*  index-2 footer  */
+
+.footer-style-2-all .footer-right li {
+  display: inline-block;
+    float: inherit;
+}
+.footer-style-2-all .footer-right {
+  float: inherit;
+  margin: 30px 0;
+}

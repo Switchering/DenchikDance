@@ -9,7 +9,7 @@ namespace DenchikDance.Data
     {
         public static void Initialize(SiteContext context)
         {
-            context.Database.EnsureCreated();
+            //context.Database.EnsureCreated();
 
             if (context.Categories.Any())
             {

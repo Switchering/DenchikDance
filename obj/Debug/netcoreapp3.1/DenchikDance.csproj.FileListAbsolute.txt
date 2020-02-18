@@ -163,3 +163,10 @@ C:\Users\Sowich\Projects\DenchikDance\DenchikDance\obj\Debug\netcoreapp3.1\Razor
 C:\Users\Sowich\Projects\DenchikDance\DenchikDance\obj\Debug\netcoreapp3.1\Razor\Pages\Posts\Details.cshtml.g.cs
 C:\Users\Sowich\Projects\DenchikDance\DenchikDance\obj\Debug\netcoreapp3.1\Razor\Pages\Posts\Edit.cshtml.g.cs
 C:\Users\Sowich\Projects\DenchikDance\DenchikDance\obj\Debug\netcoreapp3.1\Razor\Pages\Posts\Index.cshtml.g.cs
+c:\Users\Sowich\Projects\DenchikDance\DenchikDance\obj\Debug\netcoreapp3.1\Razor\Pages\Users\Create.cshtml.g.cs
+c:\Users\Sowich\Projects\DenchikDance\DenchikDance\obj\Debug\netcoreapp3.1\Razor\Pages\Users\Delete.cshtml.g.cs
+c:\Users\Sowich\Projects\DenchikDance\DenchikDance\obj\Debug\netcoreapp3.1\Razor\Pages\Users\Details.cshtml.g.cs
+c:\Users\Sowich\Projects\DenchikDance\DenchikDance\obj\Debug\netcoreapp3.1\Razor\Pages\Users\Edit.cshtml.g.cs
+c:\Users\Sowich\Projects\DenchikDance\DenchikDance\obj\Debug\netcoreapp3.1\Razor\Pages\Users\Index.cshtml.g.cs
+C:\Users\Sowich\Projects\DenchikDance\DenchikDance\obj\Debug\netcoreapp3.1\Razor\Pages\Shared\_Layout1.cshtml.g.cs
+c:\Users\Sowich\Projects\DenchikDance\DenchikDance\obj\Debug\netcoreapp3.1\Razor\Pages\Blog.cshtml.g.cs

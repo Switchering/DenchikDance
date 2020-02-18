@@ -10,6 +10,7 @@ namespace DenchikDance.Models
         public string Title { get; set; }
         public string Description { get; set; }
         public string Text { get; set; }
+        public byte[] Image { get; set; }
         public int CategoryID { get; set; }
         public int UserID { get; set; }
         public ICollection<TagRelation> TagRelations { get; set; }
