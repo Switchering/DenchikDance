@@ -28,6 +28,9 @@
             <th>
                 @Html.DisplayNameFor(model => model.Post[0].User)
             </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Post[0].Image)
+            </th>
             <th></th>
         </tr>
     </thead>
@@ -48,6 +51,21 @@
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.User.ID)
+            </td>
+            <td>
+                @{
+                    string imageSrc;
+                    if (item.Image.Length > 1)
+                    {
+                        var imageBase64 = Convert.ToBase64String(item.Image);
+                        imageSrc = string.Format("data:image/gif;base64, {0}", imageBase64);
+                    }
+                    else
+                    {
+                        imageSrc = "/images/noImage.png";
+                    }
+                }
+                <img src="@imageSrc" alt="Image" height="100px"/>
             </td>
             <td>
                 <a asp-page="./Edit" asp-route-id="@item.ID">Edit</a> |

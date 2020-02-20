@@ -18,11 +18,20 @@ namespace DenchikDance.Pages
             _context = context;
         }
 
+
         public new IList<Post> Post { get;set; }
+
 
         public async Task OnGetAsync()
         {
             Post = await _context.Posts.ToListAsync();
+
         }
+
+        public async Task OnPostAsync()
+        {
+
+        }
+
     }
 }
