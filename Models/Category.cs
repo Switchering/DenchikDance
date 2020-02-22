@@ -9,6 +9,6 @@ namespace DenchikDance.Models
         public int ID { get; set; }
         public string Title { get; set; }
         public string Description { get; set; }
-        public ICollection<Post> Posts { get; set; }
+        public ICollection<Article> Articles { get; set; }
     }
 }

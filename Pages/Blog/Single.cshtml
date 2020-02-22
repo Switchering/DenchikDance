@@ -1,0 +1,38 @@
+@page
+@model Pages_Blog.SingleModel
+
+@{
+    ViewData["Title"] = "Single";
+}
+ <section class="blog-details-area ptb-100">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="blog-details-left">
+                    <div class="blog-part">
+                        <div class="blog-img">
+                            <img src="@Html.DisplayFor(model => model.Article.ArticleImage)" alt="">
+                        </div>
+                        <div class="blog-info">
+                            <h3>@Html.DisplayFor(model => model.Article.Title)</h3>
+                            <div class="blog-meta">
+                                <p class="blog-icon2">Автор : @Html.DisplayFor(model => model.Article.User.Login) </p>
+                                @* <p>Дата публикации : @Html.DisplayFor(model => model.Article.PublishDate)</p> *@
+                            </div>
+                            <p>@Html.DisplayFor(model => model.Article.Text)</p>
+                        </div>
+                        <div class="blog-social text-center">
+                            <ul>
+                                <li><a href="#">Facebook</a></li>
+                                <li><a href="#">Twitter</a></li>
+                                <li><a href="#">Pinterest</a></li>
+                                <li><a href="#">Dribble</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            @await Html.PartialAsync("_BlogPartial.cshtml", Model)
+        </div>
+    </div>
+</section>

@@ -1,0 +1,43 @@
+@model Pages_Blog.SingleModel
+
+<div class="col-md-4">
+    <div class="blog-right-sidebar">
+        <div class="blog-search mb-40">
+            <form action="#">
+                <input value="" placeholder="Type Here . . . . . . . . . . . . " type="text">
+                <button class="submit" type="submit"> <i class="icon_search"></i> </button>
+            </form>
+        </div>
+        <div class="blog-right-sidebar-top mb-40">
+            <h3 class="leave-comment-text-side">instagram</h3>
+            <ul>
+                <li><a href="#"><img alt="" src="img/blog/15.jpg"></a></li>
+            </ul>
+        </div>
+        <div class="blog-right-sidebar-top mb-40">
+            <h3 class="leave-comment-text-side">Последние посты</h3>
+            @foreach (var item in Model.GetLatest())
+            {                
+                <div class="latest-blog">
+                    <div class="latest-left">
+                        <a href="#"><img alt="" src="img/blog/23.jpg"></a>
+                    </div>
+                    <div class="latest-right">
+                        <h3><a href="#">@Html.DisplayFor(model => item.Title) </a></h3>
+                        <span>On 01 Dec 2016 </span>
+                    </div>
+                </div>
+            }
+        </div>
+        <div class="blog-right-sidebar-bottom">
+            <h3 class="leave-comment-text-side"> Popular Tag</h3>
+            <ul>
+                <li><a href="#">Web Development</a></li>
+                <li><a href="#">Photography</a></li>
+                <li class="nn"><a href="#">Fashion</a></li>
+                <li><a href="#">Web Design</a></li>
+                <li class="nn"><a href="#">Woman</a></li>
+            </ul>
+        </div>
+    </div>
+</div>

@@ -16,24 +16,7 @@ namespace DenchikDance.Migrations
             modelBuilder
                 .HasAnnotation("ProductVersion", "3.1.1");
 
-            modelBuilder.Entity("DenchikDance.Models.Category", b =>
-                {
-                    b.Property<int>("ID")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("INTEGER");
-
-                    b.Property<string>("Description")
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("Title")
-                        .HasColumnType("TEXT");
-
-                    b.HasKey("ID");
-
-                    b.ToTable("Category");
-                });
-
-            modelBuilder.Entity("DenchikDance.Models.Post", b =>
+            modelBuilder.Entity("DenchikDance.Models.Article", b =>
                 {
                     b.Property<int>("ID")
                         .ValueGeneratedOnAdd()
@@ -63,7 +46,24 @@ namespace DenchikDance.Migrations
 
                     b.HasIndex("UserID");
 
-                    b.ToTable("Post");
+                    b.ToTable("Article");
+                });
+
+            modelBuilder.Entity("DenchikDance.Models.Category", b =>
+                {
+                    b.Property<int>("ID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Description")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Title")
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("ID");
+
+                    b.ToTable("Category");
                 });
 
             modelBuilder.Entity("DenchikDance.Models.Tag", b =>
@@ -89,7 +89,7 @@ namespace DenchikDance.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("PostID")
+                    b.Property<int>("ArticleID")
                         .HasColumnType("INTEGER");
 
                     b.Property<int>("TagID")
@@ -97,7 +97,7 @@ namespace DenchikDance.Migrations
 
                     b.HasKey("ID");
 
-                    b.HasIndex("PostID");
+                    b.HasIndex("ArticleID");
 
                     b.HasIndex("TagID");
 
@@ -147,16 +147,16 @@ namespace DenchikDance.Migrations
                     b.ToTable("User");
                 });
 
-            modelBuilder.Entity("DenchikDance.Models.Post", b =>
+            modelBuilder.Entity("DenchikDance.Models.Article", b =>
                 {
                     b.HasOne("DenchikDance.Models.Category", "Category")
-                        .WithMany("Posts")
+                        .WithMany("Articles")
                         .HasForeignKey("CategoryID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.HasOne("DenchikDance.Models.User", "User")
-                        .WithMany("Posts")
+                        .WithMany("Articles")
                         .HasForeignKey("UserID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -164,9 +164,9 @@ namespace DenchikDance.Migrations
 
             modelBuilder.Entity("DenchikDance.Models.TagRelation", b =>
                 {
-                    b.HasOne("DenchikDance.Models.Post", "Post")
+                    b.HasOne("DenchikDance.Models.Article", "Article")
                         .WithMany("TagRelations")
-                        .HasForeignKey("PostID")
+                        .HasForeignKey("ArticleID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 

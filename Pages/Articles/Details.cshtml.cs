@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using DenchikDance.Data;
 using DenchikDance.Models;
 
-namespace DenchikDance.Pages_Posts
+namespace DenchikDance.Pages_Articles
 {
     public class DetailsModel : PageModel
     {
@@ -19,7 +19,7 @@ namespace DenchikDance.Pages_Posts
             _context = context;
         }
 
-        public Post Post { get; set; }
+        public Article Article { get; set; }
 
         public async Task<IActionResult> OnGetAsync(int? id)
         {
@@ -28,11 +28,11 @@ namespace DenchikDance.Pages_Posts
                 return NotFound();
             }
 
-            Post = await _context.Posts
-                .Include(p => p.Category)
-                .Include(p => p.User).FirstOrDefaultAsync(m => m.ID == id);
+            Article = await _context.Articles
+                .Include(a => a.Category)
+                .Include(a => a.User).FirstOrDefaultAsync(m => m.ID == id);
 
-            if (Post == null)
+            if (Article == null)
             {
                 return NotFound();
             }

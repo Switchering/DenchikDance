@@ -1,8 +1,9 @@
-﻿using Microsoft.EntityFrameworkCore.Migrations;
+﻿using System;
+using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace DenchikDance.Migrations
 {
-    public partial class InitialCreate : Migration
+    public partial class NewBeginning : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -66,7 +67,7 @@ namespace DenchikDance.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Post",
+                name: "Article",
                 columns: table => new
                 {
                     ID = table.Column<int>(nullable: false)
@@ -74,20 +75,21 @@ namespace DenchikDance.Migrations
                     Title = table.Column<string>(nullable: true),
                     Description = table.Column<string>(nullable: true),
                     Text = table.Column<string>(nullable: true),
+                    Image = table.Column<byte[]>(nullable: true),
                     CategoryID = table.Column<int>(nullable: false),
                     UserID = table.Column<int>(nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Post", x => x.ID);
+                    table.PrimaryKey("PK_Article", x => x.ID);
                     table.ForeignKey(
-                        name: "FK_Post_Category_CategoryID",
+                        name: "FK_Article_Category_CategoryID",
                         column: x => x.CategoryID,
                         principalTable: "Category",
                         principalColumn: "ID",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_Post_User_UserID",
+                        name: "FK_Article_User_UserID",
                         column: x => x.UserID,
                         principalTable: "User",
                         principalColumn: "ID",
@@ -100,16 +102,16 @@ namespace DenchikDance.Migrations
                 {
                     ID = table.Column<int>(nullable: false)
                         .Annotation("Sqlite:Autoincrement", true),
-                    PostID = table.Column<int>(nullable: false),
+                    ArticleID = table.Column<int>(nullable: false),
                     TagID = table.Column<int>(nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_TagRelation", x => x.ID);
                     table.ForeignKey(
-                        name: "FK_TagRelation_Post_PostID",
-                        column: x => x.PostID,
-                        principalTable: "Post",
+                        name: "FK_TagRelation_Article_ArticleID",
+                        column: x => x.ArticleID,
+                        principalTable: "Article",
                         principalColumn: "ID",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
@@ -121,19 +123,19 @@ namespace DenchikDance.Migrations
                 });
 
             migrationBuilder.CreateIndex(
-                name: "IX_Post_CategoryID",
-                table: "Post",
+                name: "IX_Article_CategoryID",
+                table: "Article",
                 column: "CategoryID");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Post_UserID",
-                table: "Post",
+                name: "IX_Article_UserID",
+                table: "Article",
                 column: "UserID");
 
             migrationBuilder.CreateIndex(
-                name: "IX_TagRelation_PostID",
+                name: "IX_TagRelation_ArticleID",
                 table: "TagRelation",
-                column: "PostID");
+                column: "ArticleID");
 
             migrationBuilder.CreateIndex(
                 name: "IX_TagRelation_TagID",
@@ -150,7 +152,7 @@ namespace DenchikDance.Migrations
                 name: "Tournament");
 
             migrationBuilder.DropTable(
-                name: "Post");
+                name: "Article");
 
             migrationBuilder.DropTable(
                 name: "Tag");

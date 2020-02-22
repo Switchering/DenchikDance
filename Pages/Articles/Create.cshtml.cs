@@ -11,7 +11,7 @@ using Microsoft.AspNetCore.Http;
 using System.ComponentModel.DataAnnotations;
 using System.IO;
 
-namespace DenchikDance.Pages_Posts
+namespace DenchikDance.Pages_Articles
 {
     public class CreateModel : PageModel
     {
@@ -30,7 +30,7 @@ namespace DenchikDance.Pages_Posts
         }
 
         [BindProperty]
-        public Post Post { get; set; }
+        public Article Article { get; set; }
         [BindProperty]
         public IFormFile FormFile { get; set; }
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for
@@ -41,17 +41,17 @@ namespace DenchikDance.Pages_Posts
                 using (var memoryStream = new MemoryStream())
                 {
                     await FormFile.CopyToAsync(memoryStream);
-                    Post.Image = memoryStream.ToArray();
+                    Article.Image = memoryStream.ToArray();
                 }
             else
-            Post.Image = new byte[0];
+            Article.Image = new byte[0];
 
             if (!ModelState.IsValid)
                 {
                     return Page();
                 }
 
-                _context.Posts.Add(Post);
+                _context.Articles.Add(Article);
                 await _context.SaveChangesAsync();
 
                 return RedirectToPage("./Index");

@@ -20501,13 +20501,23 @@
   "RootNamespace": "DenchikDance",
   "Documents": [
     {
+      "FilePath": "c:\\Users\\Sowich\\Projects\\DenchikDance\\DenchikDance\\Pages\\Blog\\Index.cshtml",
+      "TargetPath": "Pages\\Blog\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\Sowich\\Projects\\DenchikDance\\DenchikDance\\Pages\\Shared\\_ValidationScriptsPartial.cshtml",
       "TargetPath": "Pages\\Shared\\_ValidationScriptsPartial.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\Sowich\\Projects\\DenchikDance\\DenchikDance\\Pages\\Posts\\Delete.cshtml",
-      "TargetPath": "Pages\\Posts\\Delete.cshtml",
+      "FilePath": "c:\\Users\\Sowich\\Projects\\DenchikDance\\DenchikDance\\Pages\\Articles\\Edit.cshtml",
+      "TargetPath": "Pages\\Articles\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Sowich\\Projects\\DenchikDance\\DenchikDance\\Pages\\Articles\\Index.cshtml",
+      "TargetPath": "Pages\\Articles\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -20521,13 +20531,13 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\Sowich\\Projects\\DenchikDance\\DenchikDance\\Pages\\Blog.cshtml",
-      "TargetPath": "Pages\\Blog.cshtml",
+      "FilePath": "c:\\Users\\Sowich\\Projects\\DenchikDance\\DenchikDance\\Pages\\Users\\Delete.cshtml",
+      "TargetPath": "Pages\\Users\\Delete.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\Sowich\\Projects\\DenchikDance\\DenchikDance\\Pages\\Users\\Delete.cshtml",
-      "TargetPath": "Pages\\Users\\Delete.cshtml",
+      "FilePath": "c:\\Users\\Sowich\\Projects\\DenchikDance\\DenchikDance\\Pages\\Blog\\Single.cshtml",
+      "TargetPath": "Pages\\Blog\\Single.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -20541,13 +20551,18 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\Sowich\\Projects\\DenchikDance\\DenchikDance\\Pages\\Posts\\Details.cshtml",
-      "TargetPath": "Pages\\Posts\\Details.cshtml",
+      "FilePath": "c:\\Users\\Sowich\\Projects\\DenchikDance\\DenchikDance\\Pages\\Users\\Details.cshtml",
+      "TargetPath": "Pages\\Users\\Details.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\Sowich\\Projects\\DenchikDance\\DenchikDance\\Pages\\Users\\Details.cshtml",
-      "TargetPath": "Pages\\Users\\Details.cshtml",
+      "FilePath": "c:\\Users\\Sowich\\Projects\\DenchikDance\\DenchikDance\\Pages\\Articles\\Create.cshtml",
+      "TargetPath": "Pages\\Articles\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Sowich\\Projects\\DenchikDance\\DenchikDance\\Pages\\Blog\\_BlogPartial.cshtml",
+      "TargetPath": "Pages\\Blog\\_BlogPartial.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -20556,18 +20571,8 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\Sowich\\Projects\\DenchikDance\\DenchikDance\\Pages\\Posts\\Index.cshtml",
-      "TargetPath": "Pages\\Posts\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
       "FilePath": "c:\\Users\\Sowich\\Projects\\DenchikDance\\DenchikDance\\Pages\\Error.cshtml",
       "TargetPath": "Pages\\Error.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Sowich\\Projects\\DenchikDance\\DenchikDance\\Pages\\Posts\\Create.cshtml",
-      "TargetPath": "Pages\\Posts\\Create.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -20576,8 +20581,13 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\Sowich\\Projects\\DenchikDance\\DenchikDance\\Pages\\Posts\\Edit.cshtml",
-      "TargetPath": "Pages\\Posts\\Edit.cshtml",
+      "FilePath": "c:\\Users\\Sowich\\Projects\\DenchikDance\\DenchikDance\\Pages\\Articles\\Delete.cshtml",
+      "TargetPath": "Pages\\Articles\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Sowich\\Projects\\DenchikDance\\DenchikDance\\Pages\\Articles\\Details.cshtml",
+      "TargetPath": "Pages\\Articles\\Details.cshtml",
       "FileKind": "mvc"
     },
     {

@@ -1,13 +1,8 @@
 ﻿@page
-@model DenchikDance.Pages.BlogModel
+@model Pages_Blog.IndexModel
 @{
     
 }
-<form method="post">
-    <input type="file" name="FormFile" >
-    <button type="submit" value="create"></button>
-</form>
-
 
 <div class="text-center">
     <section class="breadcrumbs-area breadcrumb-bg-1 ptb-160 port bread-card solid-color">
@@ -30,17 +25,17 @@
     <div class="blog-area border-top pt-100 pb-50">
         <div class="container">
             <div class="row">
-                @foreach (var item in Model.Post)
+                @foreach (var item in Model.Article)
                 {
                     <div class="col-md-4 col-sm-6">
                         <div class="single-blog text-center mb-40">
                             <div class="hover-style blog-icon">
                                 <a href="blog-details.html">
-                                    <img src="img/blog/1.jpg" alt="">
+                                    <img src="@item.ArticleImage" alt="">
                                 </a>
                             </div>
                             <div class="blog-details text-center">
-                                <h3><a href="blog-details.html">10 December 2017</a></h3>
+                                <h3><a asp-page="./Single" asp-route-id="@item.ID">@Html.DisplayFor(modelItem => item.Title)</a></h3>
                                 <p>@Html.DisplayFor(modelItem => item.Text)</p>
                             </div>
                         </div>

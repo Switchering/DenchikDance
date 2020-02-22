@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using DenchikDance.Data;
 using DenchikDance.Models;
 
-namespace DenchikDance.Pages_Posts
+namespace DenchikDance.Pages_Articles
 {
     public class DeleteModel : PageModel
     {
@@ -20,7 +20,7 @@ namespace DenchikDance.Pages_Posts
         }
 
         [BindProperty]
-        public Post Post { get; set; }
+        public Article Article { get; set; }
         public string ErrorMesage { get; set; }
 
         public async Task<IActionResult> OnGetAsync(int? id, bool? saveChangesError = false)
@@ -30,11 +30,11 @@ namespace DenchikDance.Pages_Posts
                 return NotFound();
             }
 
-            Post = await _context.Posts
-                .Include(p => p.Category)
-                .Include(p => p.User).AsNoTracking().FirstOrDefaultAsync(m => m.ID == id);
+            Article = await _context.Articles
+                .Include(a => a.Category)
+                .Include(a => a.User).AsNoTracking().FirstOrDefaultAsync(m => m.ID == id);
 
-            if (Post == null)
+            if (Article == null)
             {
                 return NotFound();
             }
@@ -52,16 +52,16 @@ namespace DenchikDance.Pages_Posts
                 return NotFound();
             }
 
-            var post = await _context.Posts.FindAsync(id);
+            var article = await _context.Articles.FindAsync(id);
 
-            if (post == null)
+            if (Article == null)
             {
                 return NotFound();
             }
 
             try
             {
-                _context.Posts.Remove(post);
+                _context.Articles.Remove(article);
                 await _context.SaveChangesAsync();
                 return RedirectToPage("./Index");
             }
