@@ -51,52 +51,10 @@ namespace DenchikDance.Pages_Articles
                     return Page();
                 }
 
-                _context.Articles.Add(Article);
-                await _context.SaveChangesAsync();
+            _context.Articles.Add(Article);
+            await _context.SaveChangesAsync();
 
-                return RedirectToPage("./Index");
-        }
-
-        public async Task<IActionResult> OnPostUploadAsync(List<IFormFile> files)
-        {
-            long size = files.Sum(f => f.Length);
-
-            foreach (var formFile in files)
-            {
-                if (formFile.Length > 0)
-                {
-                    var filePath = Path.GetTempFileName();
-                    using ( var stream = System.IO.File.Create(filePath))
-                    {
-                        await formFile.CopyToAsync(stream);
-                    }
-                }
-            }
-            return Page();
-        }        
-
-        // public async Task<IActionResult> OnPostUploadAsync()
-        // {
-        //     MemoryStream mem = new MemoryStream();
-
-        //         using (var memoryStream = new MemoryStream())
-        //         {
-        //             await FormFile.CopyToAsync(memoryStream);
-        //             if (memoryStream.Length < 2000000)
-        //             System.Diagnostics.Debug.WriteLine(memoryStream.Length.ToString());
-        //             Post.Image = memoryStream.ToArray();
-        //         }
-        //     var emptyPost = new Post(); 
-        //     if (await TryUpdateModelAsync<Post>(
-        //     emptyPost,
-        //     "post",
-        //     p => p.Title, p => p.Description, p => p.Text, p => p.CategoryID, p => p.UserID))
-        //     {
-        //         _context.Posts.Add(Post);
-        //         await _context.SaveChangesAsync();
-        //         return RedirectToPage("./Index");
-        //     }
-        //     return RedirectToPage("./Index"); 
-        // }
+            return RedirectToPage("./Index");
+        }  
     }
 }

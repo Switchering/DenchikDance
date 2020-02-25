@@ -37,18 +37,15 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-md-3 col-xs-12">
-							<div class="logo">
-								<a href="index.html"><img src="img/logo/logo.png" alt=""></a>
-							</div>
+                            <a href="index.html"><img style="height: 74px;" src="/images/dance-logo.jpg" alt=""></a>
 						</div>
 						<div class="col-md-9 col-xs-12">
 							<div class="main-menu text-right">
 								<nav>
 									<ul class="menu">
-										<li class="active">
-                                            <a asp-area="" asp-page="/Index">home</a>
-                                        </li>
-										<li><a asp-area="" asp-page="/Privacy">about us</a></li>
+										<li><a asp-area="" asp-page="/Index">Главная</a></li>
+                                        <li><a asp-area="" asp-page="/Blog/Index">Блог</a></li>
+										<li><a asp-area="" asp-page="/Privacy">Обо мне</a></li>
 									</ul>
 								</nav>
 							</div>
@@ -59,10 +56,8 @@
 			</div>
 		</header>
 		<!-- header end -->
-		<div class="container">
-            <main role="main" class="pb-3">
-                @RenderBody()
-            </main>
+		<div>
+            @RenderBody()
         </div>
 		<!-- footer start -->
 		<footer class="footer-area ptb-60">
@@ -89,8 +84,6 @@
 		</footer>
 		<!-- footer end -->
         <!-- start scrollUp  -->
-       
-       
 		<!-- all js here -->
         <script src="~/js/vendor/jquery-1.12.0.min.js"></script>
         <script src="~/js/bootstrap.min.js"></script>

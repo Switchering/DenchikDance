@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace DenchikDance.Migrations
 {
-    public partial class NewBeginning : Migration
+    public partial class ThismigrationsDidntwork : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -14,7 +14,8 @@ namespace DenchikDance.Migrations
                     ID = table.Column<int>(nullable: false)
                         .Annotation("Sqlite:Autoincrement", true),
                     Title = table.Column<string>(nullable: true),
-                    Description = table.Column<string>(nullable: true)
+                    Description = table.Column<string>(nullable: true),
+                    Image = table.Column<byte[]>(nullable: true)
                 },
                 constraints: table =>
                 {
@@ -41,10 +42,12 @@ namespace DenchikDance.Migrations
                 {
                     ID = table.Column<int>(nullable: false)
                         .Annotation("Sqlite:Autoincrement", true),
-                    Title = table.Column<string>(nullable: true),
-                    Place = table.Column<string>(nullable: true),
-                    Description = table.Column<string>(nullable: true),
-                    Text = table.Column<string>(nullable: true)
+                    Title = table.Column<string>(nullable: false),
+                    Place = table.Column<string>(nullable: false),
+                    Description = table.Column<string>(nullable: false),
+                    Text = table.Column<string>(nullable: false),
+                    Image = table.Column<byte[]>(nullable: true),
+                    TournamentDate = table.Column<DateTime>(nullable: false)
                 },
                 constraints: table =>
                 {
@@ -59,7 +62,8 @@ namespace DenchikDance.Migrations
                         .Annotation("Sqlite:Autoincrement", true),
                     Login = table.Column<string>(nullable: true),
                     Email = table.Column<string>(nullable: true),
-                    Password = table.Column<string>(nullable: true)
+                    Password = table.Column<string>(nullable: true),
+                    Image = table.Column<byte[]>(nullable: true)
                 },
                 constraints: table =>
                 {
@@ -72,10 +76,11 @@ namespace DenchikDance.Migrations
                 {
                     ID = table.Column<int>(nullable: false)
                         .Annotation("Sqlite:Autoincrement", true),
-                    Title = table.Column<string>(nullable: true),
-                    Description = table.Column<string>(nullable: true),
-                    Text = table.Column<string>(nullable: true),
+                    Title = table.Column<string>(nullable: false),
+                    Description = table.Column<string>(nullable: false),
+                    Text = table.Column<string>(nullable: false),
                     Image = table.Column<byte[]>(nullable: true),
+                    PublishDate = table.Column<DateTime>(nullable: false),
                     CategoryID = table.Column<int>(nullable: false),
                     UserID = table.Column<int>(nullable: false)
                 },

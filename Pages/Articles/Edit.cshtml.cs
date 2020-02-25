@@ -62,8 +62,6 @@ namespace DenchikDance.Pages_Articles
                     await FormFile.CopyToAsync(memoryStream);
                     Article.Image = memoryStream.ToArray();
                 }
-
-            
             try
             {
                 await _context.SaveChangesAsync();
@@ -79,7 +77,6 @@ namespace DenchikDance.Pages_Articles
                     throw;
                 }
             }
-
             return RedirectToPage("./Index");
         }
 

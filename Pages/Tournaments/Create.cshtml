@@ -1,0 +1,58 @@
+@page
+@model DenchikDance.PagesTournaments.CreateModel
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Tournament</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post" enctype="multipart/form-data">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Tournament.Title" class="control-label"></label>
+                <input asp-for="Tournament.Title" class="form-control" />
+                <span asp-validation-for="Tournament.Title" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Tournament.Place" class="control-label"></label>
+                <input asp-for="Tournament.Place" class="form-control" />
+                <span asp-validation-for="Tournament.Place" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Tournament.Description" class="control-label"></label>
+                <input asp-for="Tournament.Description" class="form-control" />
+                <span asp-validation-for="Tournament.Description" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Tournament.Text" class="control-label"></label>
+                <input asp-for="Tournament.Text" class="form-control" />
+                <span asp-validation-for="Tournament.Text" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Tournament.TournamentDate" class="control-label"></label>
+                <input asp-for="Tournament.TournamentDate" class="form-control" />
+                <span asp-validation-for="Tournament.TournamentDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FormFile" class="control-label"></label>
+                <input asp-for="FormFile" type="file">
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

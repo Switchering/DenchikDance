@@ -5,15 +5,15 @@
 }
 
 <div class="text-center">
-    <section class="breadcrumbs-area breadcrumb-bg-1 ptb-160 port bread-card solid-color">
+    <section class="breadcrumbs-area breadcrumb-bg-1 ptb-160 port bread-card solid-color mt-20" style="background-image: url(/images/poster.jpg);">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 text-center">
                     <div class="breadcrumbs">
-                        <h2 class="page-title">My Blog</h2>
+                        <h2 class="page-title">Мой блог</h2>
                         <ul>
                             <li>
-                                <a class="active" href="#">Home</a>
+                                <a class="active" href="#">Кисики</a>
                             </li>
                             <li>My Blog</li>
                         </ul>
@@ -22,7 +22,7 @@
             </div>
         </div>
     </section>
-    <div class="blog-area border-top pt-100 pb-50">
+    <div class="blog-area border-top pt-50 pb-50">
         <div class="container">
             <div class="row">
                 @foreach (var item in Model.Article)
@@ -30,8 +30,8 @@
                     <div class="col-md-4 col-sm-6">
                         <div class="single-blog text-center mb-40">
                             <div class="hover-style blog-icon">
-                                <a href="blog-details.html">
-                                    <img src="@item.ArticleImage" alt="">
+                                <a asp-page="./Single" asp-route-id="@item.ID">
+                                    <img src="@item.ArticleImage" alt="" class="image-blog">
                                 </a>
                             </div>
                             <div class="blog-details text-center">

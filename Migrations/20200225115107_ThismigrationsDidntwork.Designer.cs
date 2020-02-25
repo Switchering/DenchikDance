@@ -9,8 +9,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DenchikDance.Migrations
 {
     [DbContext(typeof(SiteContext))]
-    [Migration("20200221102809_NewBeginning")]
-    partial class NewBeginning
+    [Migration("20200225115107_ThismigrationsDidntwork")]
+    partial class ThismigrationsDidntwork
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -28,15 +28,21 @@ namespace DenchikDance.Migrations
                         .HasColumnType("INTEGER");
 
                     b.Property<string>("Description")
+                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.Property<byte[]>("Image")
                         .HasColumnType("BLOB");
 
+                    b.Property<DateTime>("PublishDate")
+                        .HasColumnType("TEXT");
+
                     b.Property<string>("Text")
+                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Title")
+                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.Property<int>("UserID")
@@ -59,6 +65,9 @@ namespace DenchikDance.Migrations
 
                     b.Property<string>("Description")
                         .HasColumnType("TEXT");
+
+                    b.Property<byte[]>("Image")
+                        .HasColumnType("BLOB");
 
                     b.Property<string>("Title")
                         .HasColumnType("TEXT");
@@ -113,15 +122,25 @@ namespace DenchikDance.Migrations
                         .HasColumnType("INTEGER");
 
                     b.Property<string>("Description")
+                        .IsRequired()
                         .HasColumnType("TEXT");
 
+                    b.Property<byte[]>("Image")
+                        .HasColumnType("BLOB");
+
                     b.Property<string>("Place")
+                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Text")
+                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Title")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<DateTime>("TournamentDate")
                         .HasColumnType("TEXT");
 
                     b.HasKey("ID");
@@ -137,6 +156,9 @@ namespace DenchikDance.Migrations
 
                     b.Property<string>("Email")
                         .HasColumnType("TEXT");
+
+                    b.Property<byte[]>("Image")
+                        .HasColumnType("BLOB");
 
                     b.Property<string>("Login")
                         .HasColumnType("TEXT");

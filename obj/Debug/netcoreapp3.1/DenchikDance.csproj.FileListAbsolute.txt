@@ -172,3 +172,13 @@ C:\Users\Sowich\Projects\DenchikDance\DenchikDance\obj\Debug\netcoreapp3.1\Razor
 C:\Users\Sowich\Projects\DenchikDance\DenchikDance\obj\Debug\netcoreapp3.1\Razor\Pages\Blog\Index.cshtml.g.cs
 C:\Users\Sowich\Projects\DenchikDance\DenchikDance\obj\Debug\netcoreapp3.1\Razor\Pages\Blog\Single.cshtml.g.cs
 C:\Users\Sowich\Projects\DenchikDance\DenchikDance\obj\Debug\netcoreapp3.1\Razor\Pages\Blog\_BlogPartial.cshtml.g.cs
+C:\Users\Sowich\Projects\DenchikDance\DenchikDance\obj\Debug\netcoreapp3.1\Razor\Pages\Categories\Create.cshtml.g.cs
+C:\Users\Sowich\Projects\DenchikDance\DenchikDance\obj\Debug\netcoreapp3.1\Razor\Pages\Categories\Delete.cshtml.g.cs
+C:\Users\Sowich\Projects\DenchikDance\DenchikDance\obj\Debug\netcoreapp3.1\Razor\Pages\Categories\Details.cshtml.g.cs
+C:\Users\Sowich\Projects\DenchikDance\DenchikDance\obj\Debug\netcoreapp3.1\Razor\Pages\Categories\Edit.cshtml.g.cs
+C:\Users\Sowich\Projects\DenchikDance\DenchikDance\obj\Debug\netcoreapp3.1\Razor\Pages\Categories\Index.cshtml.g.cs
+C:\Users\Sowich\Projects\DenchikDance\DenchikDance\obj\Debug\netcoreapp3.1\Razor\Pages\Tournaments\Create.cshtml.g.cs
+C:\Users\Sowich\Projects\DenchikDance\DenchikDance\obj\Debug\netcoreapp3.1\Razor\Pages\Tournaments\Delete.cshtml.g.cs
+C:\Users\Sowich\Projects\DenchikDance\DenchikDance\obj\Debug\netcoreapp3.1\Razor\Pages\Tournaments\Details.cshtml.g.cs
+C:\Users\Sowich\Projects\DenchikDance\DenchikDance\obj\Debug\netcoreapp3.1\Razor\Pages\Tournaments\Edit.cshtml.g.cs
+C:\Users\Sowich\Projects\DenchikDance\DenchikDance\obj\Debug\netcoreapp3.1\Razor\Pages\Tournaments\Index.cshtml.g.cs

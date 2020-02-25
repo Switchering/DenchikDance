@@ -11,13 +11,13 @@ namespace DenchikDance.Models
         public string Title { get; set; }
         [Required]
         public string Description { get; set; }
-        [Required] 
+        [Required]
         public string Text { get; set; }
         public byte[] Image { get; set; }
-        // [DataType(DataType.Date)]
-        // [DisplayFormat(DataFormatString = "{0:dd-MM-yyyy}", ApplyFormatInEditMode = true)]
-        // [Display(Name = "Publish Date")]
-        // public DateTime PublishDate { get; set; }
+        [DataType(DataType.DateTime)]
+        [DisplayFormat(DataFormatString = "{0:ddMMyyyyTHH:mm:ssZ}", ApplyFormatInEditMode = true)]
+        [Display(Name = "Publish Date")]
+        public DateTime PublishDate { get; set; }
         public int CategoryID { get; set; }
         public int UserID { get; set; }
         public ICollection<TagRelation> TagRelations { get; set; }
@@ -40,7 +40,6 @@ namespace DenchikDance.Models
                 }
                 return imageSrc;
             }
-            
         }
     }
 }

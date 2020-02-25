@@ -4,7 +4,94 @@
     ViewData["Title"] = "Home page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcomen</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="slider slide-show pt-20">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-sm-4">
+                <div class="slider-info-img">
+                    <img src="/images/index-img.jpg" alt="">
+                </div>
+            </div>
+            <div class="col-md-8 col-sm-8">
+                <div class="all-slider-text">
+                    <div class="slider-info-text text-center">
+                        <h2><span>Привет!!!</span> Я Денис</h2>
+                        <h3>И я танцую</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
+<!-- portfolio start -->
+<div class="portfolio-area ptb-100">
+    <div class="container">
+        <div class="portfolio-menu text-center mb-50">
+            <button class="active" data-filter="*">ALL</button>
+            @foreach (var item in Model.Categories)
+            {
+                <button data-filter=".@concating(item.ID)">@Html.DisplayFor(modelitem => item.Title)</button>
+            }
+        </div>			
+        <div class="row">
+            <div class="grid" style="width: 100%;">
+                @{
+                    string concating(int id)
+                    {
+                        var name = string.Concat("cat", id.ToString());
+                        return name;
+                    }
+                }
+                @foreach (var item in Model.GetLatestArticles(15))
+                {
+                <div class="col-md-4 col-sm-4 col-xs-12 grid-item @concating(item.CategoryID)">
+                    <div class="portfolio hover-style">
+                        <div class="portfolio-img">
+                            <img src="@item.ArticleImage" alt="" />
+                            <div class="portfolio-view">
+                                <a class="img-poppu" href="@item.ArticleImage">
+                                    <span class="plus"></span>
+                                </a>								
+                            </div>									
+                            <div class="portfolio-title title-style-1">
+                                <span>@Html.DisplayFor(modelItem => item.Title)</span>
+                            </div>	
+                        </div>	
+                    </div>						
+                </div>
+                }
+            </div>		
+        </div>
+        <div class="view-more text-center">
+            <a href="single-portfolio.html">Посмотреть все</a>
+        </div>
+    </div>
+</div>
+<!-- portfolio end -->
+<!-- blog-area start -->
+<div class="blog-area gray-bg border-top pt-60">
+    <div class="container">
+        <div class="section-title text-center mb-60">
+            <h2>Мои турниры</h2>
+        </div>
+        <div class="row">
+            @foreach (var item in Model.GetLatestTournaments(3))
+            {
+            <div class="col-md-4 col-sm-4">
+                <div class="single-blog text-center mb-30">
+                    <div class="hover-style blog-icon">
+                        <a asp-page="./Blog/Single" asp-route-id="@item.ID">
+                            <img src="@item.TournamentImage" class="image-blog">
+                        </a>
+                    </div>
+                    <div class="blog-details text-center">
+                        <h3><a asp-page="./Blog/Single" asp-route-id="@item.ID">@Html.DisplayFor(modelItem => item.Title)</a></h3>
+                        <p>@Html.DisplayFor(modelItem => item.Text)</p>
+                    </div>
+                </div>
+            </div>
+            }
+        </div>
+    </div>
+</div>
+<!-- blog-area end -->

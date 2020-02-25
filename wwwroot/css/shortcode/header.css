@@ -11,9 +11,7 @@ NOTE: This is Header style file. All Header related style included in this file.
   z-index: 9;
 }
 .header-area{}
-.logo {
-  margin-top: 20px;
-}
+
 .main-menu{}
 .main-menu ul{}
 .main-menu ul li {
