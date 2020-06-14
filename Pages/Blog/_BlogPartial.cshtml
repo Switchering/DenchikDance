@@ -20,11 +20,11 @@
             {                
                 <div class="latest-blog">
                     <div class="latest-left">
-                        <a href="#"><img alt="" src="img/blog/23.jpg"></a>
+                        <a href="#"><img style="height: 48px; width: 48px;" alt="" src="@item.ArticleImage"></a>
                     </div>
                     <div class="latest-right">
-                        <h3><a href="#">@Html.DisplayFor(model => item.Title) </a></h3>
-                        <span>On 01 Dec 2016 </span>
+                        <h3><a asp-page="./Single" asp-route-id="@item.ID">@Html.DisplayFor(model => item.Title)</a></h3>
+                        <span>@item.PublishDate</span>
                     </div>
                 </div>
             }

@@ -13,6 +13,27 @@ namespace DenchikDance.Pages
     using Microsoft.AspNetCore.Mvc.Rendering;
     using Microsoft.AspNetCore.Mvc.ViewFeatures;
 #nullable restore
+#line 1 "C:\Users\Sowich\Projects\DenchikDance\DenchikDance\_ViewImports.cshtml"
+using Microsoft.AspNetCore.Identity;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 2 "C:\Users\Sowich\Projects\DenchikDance\DenchikDance\_ViewImports.cshtml"
+using DenchikDance.Areas.Identity;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 3 "C:\Users\Sowich\Projects\DenchikDance\DenchikDance\_ViewImports.cshtml"
+using DenchikDance.Areas.Identity.Pages;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
 #line 1 "C:\Users\Sowich\Projects\DenchikDance\DenchikDance\Pages\_ViewImports.cshtml"
 using DenchikDance;
 
@@ -20,6 +41,7 @@ using DenchikDance;
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"7091c65830b0329e613be026ede8a57552863778", @"/Pages/_ViewStart.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"b50ac298d797ecceee7f34777cd021457edd9b85", @"/_ViewImports.cshtml")]
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"f8f6aa5f067ed9192c0e5628ee1c5d99ea0be5fb", @"/Pages/_ViewImports.cshtml")]
     public class Pages__ViewStart : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {

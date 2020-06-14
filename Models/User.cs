@@ -1,6 +1,7 @@
 using System;
 using System.ComponentModel.DataAnnotations;
 using System.Collections.Generic;
+using Microsoft.AspNetCore.Identity;
 
 namespace DenchikDance.Models
 {
@@ -8,7 +9,7 @@ namespace DenchikDance.Models
     {
         public int ID { get; set; }
         public string Login { get; set; }
-        public string Email { get; set; }
+        public new string Email { get; set;  }
         public string Password { get; set; }
         public ICollection<Article> Articles { get; set; }
         public byte[] Image { get; set; }

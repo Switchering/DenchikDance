@@ -13,6 +13,27 @@ namespace DenchikDance.Pages
     using Microsoft.AspNetCore.Mvc.Rendering;
     using Microsoft.AspNetCore.Mvc.ViewFeatures;
 #nullable restore
+#line 1 "C:\Users\Sowich\Projects\DenchikDance\DenchikDance\_ViewImports.cshtml"
+using Microsoft.AspNetCore.Identity;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 2 "C:\Users\Sowich\Projects\DenchikDance\DenchikDance\_ViewImports.cshtml"
+using DenchikDance.Areas.Identity;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 3 "C:\Users\Sowich\Projects\DenchikDance\DenchikDance\_ViewImports.cshtml"
+using DenchikDance.Areas.Identity.Pages;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
 #line 1 "C:\Users\Sowich\Projects\DenchikDance\DenchikDance\Pages\_ViewImports.cshtml"
 using DenchikDance;
 
@@ -20,6 +41,7 @@ using DenchikDance;
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"287602c3f975b537a4af09690f1fd35d9ee07b43", @"/Pages/Index.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"b50ac298d797ecceee7f34777cd021457edd9b85", @"/_ViewImports.cshtml")]
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"f8f6aa5f067ed9192c0e5628ee1c5d99ea0be5fb", @"/Pages/_ViewImports.cshtml")]
     public class Pages_Index : global::Microsoft.AspNetCore.Mvc.RazorPages.Page
     {
@@ -215,7 +237,7 @@ WriteAttributeValue("", 1969, item.ArticleImage, 1969, 18, false);
 #line hidden
 #nullable disable
             WriteLiteral("            <div class=\"col-md-4 col-sm-4\">\r\n                <div class=\"single-blog text-center mb-30\">\r\n                    <div class=\"hover-style blog-icon\">\r\n                        ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "287602c3f975b537a4af09690f1fd35d9ee07b439809", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "287602c3f975b537a4af09690f1fd35d9ee07b4310536", async() => {
                 WriteLiteral("\r\n                            <img");
                 BeginWriteAttribute("src", " src=\"", 3252, "\"", 3279, 1);
 #nullable restore
@@ -256,7 +278,7 @@ WriteAttributeValue("", 3258, item.TournamentImage, 3258, 21, false);
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n                    </div>\r\n                    <div class=\"blog-details text-center\">\r\n                        <h3>");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "287602c3f975b537a4af09690f1fd35d9ee07b4312535", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "287602c3f975b537a4af09690f1fd35d9ee07b4313263", async() => {
 #nullable restore
 #line 88 "C:\Users\Sowich\Projects\DenchikDance\DenchikDance\Pages\Index.cshtml"
                                                                            Write(Html.DisplayFor(modelItem => item.Title));
