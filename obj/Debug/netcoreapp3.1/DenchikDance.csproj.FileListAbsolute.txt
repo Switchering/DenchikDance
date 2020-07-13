@@ -12,7 +12,6 @@ C:\Users\Sowich\Projects\DenchikDance\DenchikDance\bin\Debug\netcoreapp3.1\Dench
 C:\Users\Sowich\Projects\DenchikDance\DenchikDance\obj\Debug\netcoreapp3.1\DenchikDance.csprojAssemblyReference.cache
 C:\Users\Sowich\Projects\DenchikDance\DenchikDance\obj\Debug\netcoreapp3.1\staticwebassets\DenchikDance.StaticWebAssets.Manifest.cache
 C:\Users\Sowich\Projects\DenchikDance\DenchikDance\obj\Debug\netcoreapp3.1\staticwebassets\DenchikDance.StaticWebAssets.xml
-C:\Users\Sowich\Projects\DenchikDance\DenchikDance\obj\Debug\netcoreapp3.1\DenchikDance.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Sowich\Projects\DenchikDance\DenchikDance\obj\Debug\netcoreapp3.1\DenchikDance.RazorAssemblyInfo.cache
 C:\Users\Sowich\Projects\DenchikDance\DenchikDance\obj\Debug\netcoreapp3.1\DenchikDance.RazorAssemblyInfo.cs
 C:\Users\Sowich\Projects\DenchikDance\DenchikDance\obj\Debug\netcoreapp3.1\DenchikDance.AssemblyInfoInputs.cache
@@ -179,7 +178,6 @@ C:\Users\Sowich\Projects\DenchikDance\DenchikDance\bin\Debug\netcoreapp3.1\Micro
 C:\Users\Sowich\Projects\DenchikDance\DenchikDance\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileProviders.Embedded.dll
 C:\Users\Sowich\Projects\DenchikDance\DenchikDance\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Core.dll
 C:\Users\Sowich\Projects\DenchikDance\DenchikDance\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Stores.dll
-C:\Users\Sowich\Projects\DenchikDance\DenchikDance\obj\Debug\netcoreapp3.1\DenchikDance.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\Sowich\Projects\DenchikDance\DenchikDance\obj\Debug\netcoreapp3.1\Razor\Pages\Account\Login.cshtml.g.cs
 C:\Users\Sowich\Projects\DenchikDance\DenchikDance\obj\Debug\netcoreapp3.1\Razor\Pages\Account\Logout.cshtml.g.cs
 C:\Users\Sowich\Projects\DenchikDance\DenchikDance\obj\Debug\netcoreapp3.1\Razor\Pages\Account\Register.cshtml.g.cs
@@ -208,3 +206,13 @@ C:\Users\Sowich\Projects\DenchikDance\DenchikDance\obj\Debug\netcoreapp3.1\Razor
 C:\Users\Sowich\Projects\DenchikDance\DenchikDance\obj\Debug\netcoreapp3.1\Razor\Pages\_ValidationScriptsPartial.cshtml.g.cs
 C:\Users\Sowich\Projects\DenchikDance\DenchikDance\obj\Debug\netcoreapp3.1\Razor\_ViewImports.cshtml.g.cs
 C:\Users\Sowich\Projects\DenchikDance\DenchikDance\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\Sowich\Projects\DenchikDance\DenchikDance\obj\Debug\netcoreapp3.1\Razor\Pages\Policy.cshtml.g.cs
+C:\Users\Sowich\Projects\DenchikDance\DenchikDance\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\Sowich\Projects\DenchikDance\DenchikDance\obj\Debug\netcoreapp3.1\Razor\Views\Home\Secret.cshtml.g.cs
+C:\Users\Sowich\Projects\DenchikDance\DenchikDance\obj\Debug\netcoreapp3.1\Razor\Views\Home\Login.cshtml.g.cs
+C:\Users\Sowich\Projects\DenchikDance\DenchikDance\obj\Debug\netcoreapp3.1\Razor\Views\Home\Register.cshtml.g.cs
+C:\Users\Sowich\Projects\DenchikDance\DenchikDance\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.InMemory.dll
+C:\Users\Sowich\Projects\DenchikDance\DenchikDance\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
+C:\Users\Sowich\Projects\DenchikDance\DenchikDance\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Sowich\Projects\DenchikDance\DenchikDance\obj\Debug\netcoreapp3.1\DenchikDance.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Sowich\Projects\DenchikDance\DenchikDance\obj\Debug\netcoreapp3.1\DenchikDance.MvcApplicationPartsAssemblyInfo.cache

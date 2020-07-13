@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 
 namespace DenchikDance.Data
 {
-    public class SiteContext : DbContext
+    public class SiteContext : IdentityDbContext
     {
         public SiteContext (DbContextOptions<SiteContext> options)
             : base(options)
